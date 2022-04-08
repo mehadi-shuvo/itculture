@@ -1,0 +1,763 @@
+/* =============
+extra small device
+================ */
+
+@media(max-width:575px){
+
+    /* === nav css strats === */
+
+    #big-device{
+        display: none;
+    }
+    #m-device{
+        display: block;
+    }
+
+    #m-device .memu{
+        position: absolute;
+    }
+
+    #m-device .menu-bars i{
+        color: var(--brand-col);
+        font-size: 20px;
+        text-align: right;
+        background-color: var(--font-col);
+        border-radius: 5px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3) ;
+        padding: 10px;
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(20%);
+        cursor: pointer;
+    }
+
+    #m-device .menu-bars i:hover{
+        box-shadow: inset -3px -3px 5px #ffffff33, inset 3px 3px 5px #0000004d ;
+    }
+    #m-device .menu-bars i:focus{
+        box-shadow: inset -3px -3px 5px #ffffff33, inset 3px 3px 5px #0000004d ;        
+
+    }
+
+    #mainMenu{
+        display: none;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background: #727481;
+        z-index: 99;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #mainMenu ul li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #m-device ul li:hover{
+        color: var(--brand-col);
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    #mainMenu ul li:last-child{
+        margin-right: 20px;
+    }
+
+    #menu-close{
+        text-align: center;
+        color: var(--brand-col);
+        font-size: 26px;
+        background-color: var(--font-col);
+        border-radius: 5px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3) ;
+        padding: 10px;
+        margin-top: 40px;
+    }
+        /*=== hero css starts ===  */
+
+        #hero .person .image::before{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 35px;
+            width: 70%;
+            height: 200px;
+            border: 1px dashed var(--brand-col);
+            z-index: -1;
+            animation: rotate 10s infinite;
+        
+        }
+        
+        
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+        
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
+        #hero .person .image .text p {
+            font-size: 24px;
+
+        }    
+
+        #hero .person .image .text a {
+            margin-left: 15px;
+        }
+
+        #hero .person .image .text h6::after {
+            left: 0px;
+        }
+
+        #hero .intro h4 {
+            font-size: 18px;
+            margin-top: 100px;
+            white-space: nowrap;
+        }
+
+        #hero .intro h3 {
+            font-size: 20px;
+            margin-top: 30px;
+        }  
+        
+        #hero .intro h3 .line {
+            width: 100px;
+            animation: none;
+        }
+
+        #hero .intro h6 {
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-right: 28px;
+        }
+
+        #hero {
+            padding-bottom: 20px;
+        }
+
+        #hero::before {
+            width: 0;
+            height: 0;
+            animation: none;
+        }
+        #hero::after {
+            width: 0;
+            height: 0;
+            animation: none;
+        }
+
+
+
+        #about .image img {
+            margin-top: 20px;
+        }
+
+        #about .full-info h6 {
+            margin-top: 20px;
+        }
+
+        #about .full-info h5 {
+            margin-top: 20px;
+        }
+        
+
+        #about .full-info h5 .line {
+            top: 40px;
+            width: 75px;
+            animation: none;
+        }
+
+        #about .full-info p {
+            font-weight: 300;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        #about .full-info table td {
+            text-align: justify;
+            padding: 0 15px;
+            padding-top: 15px;
+            font-size: 12px;
+            color: var(--bg-col);
+            width: 50%;
+            text-transform: capitalize;
+        }
+
+        #about .cv-box a {
+            font-size: 28px;
+        }
+
+        #about .cv-box .box {
+            padding-top: 0px;
+        }
+
+        #about {
+            border-bottom: none;
+        }
+
+        #about::before {
+            width: 0;
+            height: 0;
+            animation: none;
+        }
+
+        #about::after {
+            width: 0;
+            height: 0;
+            animation: none;
+        }
+
+        #resum .nav-tabs .nav-link {
+            font-size: 9px;
+        }
+
+        #resum {
+            padding: 20px 0;
+
+        }
+
+        #resum::before {
+            width: 0;
+            height: 0;
+            animation: none;
+        }
+        #resum::after {
+            width: 0;
+            height: 0;
+            animation: none;
+        }
+
+        #resum .heading h3 {
+            font-size: 26px;
+            margin-top: 20px;
+        }
+
+        #resum .progress-bars .skill > p {
+            font-size: 14px;
+        }
+
+        #resum .progress-bars .skill-bar span {
+            font-size: 14px;
+        }
+
+        #resum .heading h3 .line {
+            width: 80px;
+            animation: none;
+        }
+
+        #resum .items .item h6 {
+            font-size: 12px;
+
+        }
+
+        #resum .items .item h5 {
+            font-size: 8px;
+            margin-top: 15px;
+        }
+
+        #resum .items .item h5 .result {
+            font-size: 8px;
+            margin-left: 10px;
+        }
+
+        #resum .items .item p {
+            font-size: 10px;
+        }
+
+
+
+    /* === portfolio css starts === */
+
+    #portfolio .head h6 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    #portfolio .head h6 .line {
+        width: 85px;
+        animation: none;
+    }
+
+    #portfolio .project {
+        margin-bottom: 30px;
+    }
+        
+    .m-contents .off {
+        font-size: 12px;
+        padding: 13px;
+    }
+    
+    .m-contents h4 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .m-contents h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .m-contents p {
+        font-size: 10px;
+    }
+
+    .m-contents a {
+        font-size: 12px;
+        padding: 10px;
+
+    }
+
+    /* service css starts */
+
+    #service .service-items .item p {
+        font-size: 16px;
+    }
+
+
+    /* price starts */
+    #price .nav-tabs .nav-link {
+        font-size: 18px;
+    }
+
+    #price .accordion-button {
+        font-size: 18px;
+        border-radius: 10px;;
+    }
+
+    #price .accordion-body .price-head {
+        justify-content: space-between;
+    }
+
+
+    #price .accordion-body .service-item ul li {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    #price .accordion-body .service-item a {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+
+    /* contact css starts */
+    #contact .contact-input button {
+        font-size: 14px;
+        padding: 14px;
+    }
+    
+}
+
+/* ==================
+small device css starts
+===================== */
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    /* === nav css starts === */
+
+    #big-device{
+        display: none;
+    }
+    #m-device{
+        display: block;
+    }
+
+    #m-device .memu{
+        position: absolute;
+    }
+
+    #m-device .menu-bars i{
+        color: var(--brand-col);
+        font-size: 20px;
+        text-align: right;
+        background-color: var(--font-col);
+        border-radius: 5px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3) ;
+        padding: 10px;
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(20%);
+        cursor: pointer;
+    }
+
+    #m-device .menu-bars i:hover{
+        box-shadow: inset -3px -3px 5px #ffffff33, inset 3px 3px 5px #0000004d ;
+    }
+    #m-device .menu-bars i:focus{
+        box-shadow: inset -3px -3px 5px #ffffff33, inset 3px 3px 5px #0000004d ;        
+
+    }
+
+    #mainMenu{
+        display: none;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background: #727481;
+        z-index: 99;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #mainMenu ul li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #m-device ul li:hover{
+        color: var(--brand-col);
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    #mainMenu ul li:last-child{
+        margin-right: 20px;
+    }
+
+    #menu-close{
+        text-align: center;
+        color: var(--brand-col);
+        font-size: 26px;
+        background-color: var(--font-col);
+        border-radius: 5px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3) ;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    /* === hero css starts === */
+
+    #hero .person {
+        justify-content: start;
+        margin-top: 30px;
+    }
+
+    #hero .person .image::before {
+        left: 35px;
+        animation: none;
+    }
+
+    #hero .person .image .text a {
+        margin-left: 15px;
+    }
+
+    #hero .person .image .text h6::after {
+        left: 0;
+    }
+
+    #hero .intro h4 {
+        margin-top: 90px;
+    }
+
+    #hero .intro h3 {
+        margin-top: 30px;
+    }
+
+    #hero .intro h3 .line {
+        width: 95px;
+        animation: none;
+    }
+
+    #hero .intro h6 {
+        font-weight: 300;
+        font-size: 15px;
+        margin-top: 30px;
+        padding-right: 104px;
+    }
+
+    #hero::before {
+        width: 0;
+        height: 0;
+        animation: none;
+    }
+    #hero::after {
+        width: 0;
+        height: 0;
+        animation: none;
+    }
+
+    #hero {
+        padding-bottom: 50px;
+    }
+
+    /* === about css starts === */
+
+    #about .image img {
+        margin-top: 40px;
+    }
+
+    #about .full-info h6 {
+        margin-top: 20px;
+    }
+    
+    #about .full-info h5 {
+        margin-top: 20px;
+    }
+
+    #about .full-info h5 .line {
+        width: 60px;
+        animation: none;
+    }
+
+    #about .full-info p {
+        font-weight: 300;
+        margin-top: 30px;
+    }
+
+    #about {
+        border-bottom: none;
+    }
+
+    #about::before {
+        width: 0;
+        height: 0;
+        animation: none;
+    }
+    #about::after {
+        width: 0;
+        height: 0;
+        animation: none;
+    }
+
+    #resum .nav-tabs .nav-link {
+        font-size: 18px;
+    }
+
+    #resum .heading h3 {
+        margin-top: 30px;
+    }
+
+    #resum .heading h3 .line {
+        width: 60px;
+        animation: none;
+    }
+
+    #resum .items .item h5 .result {
+        margin-left: 30px;
+    }
+
+    #resum::before {
+        width: 0;
+        height: 0;
+        animation: none;
+    }
+    #resum::after {
+        width: 0;
+        height: 0;
+        animation: none;
+    }
+
+    /* === portfolio css starts === */
+
+    #portfolio .project {
+        margin-bottom: 30px;
+    }
+
+    #portfolio .head h6 .line {
+        animation: none;
+    }
+
+    .m-contents {
+        margin: 25px;
+    }
+
+    .m-contents h4 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .m-contents h3 {
+        font-size: 20px;
+    }
+
+    .m-contents p {
+        font-size: 13px;
+    }
+
+    .m-contents a {
+        font-size: 12px;
+    }
+
+    .m-contents a i {
+        font-size: 12px;
+    }
+
+    .m-contents .off {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    #big-device{
+        display: none;
+    }
+    #m-device{
+        display: block;
+    }
+
+    #m-device .memu{
+        position: absolute;
+    }
+
+    #m-device .menu-bars i{
+        color: var(--brand-col);
+        font-size: 20px;
+        text-align: right;
+        background-color: var(--font-col);
+        border-radius: 5px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3) ;
+        padding: 10px;
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(20%);
+        cursor: pointer;
+    }
+
+    #m-device .menu-bars i:hover{
+        box-shadow: inset -3px -3px 5px #ffffff33, inset 3px 3px 5px #0000004d ;
+    }
+    #m-device .menu-bars i:focus{
+        box-shadow: inset -3px -3px 5px #ffffff33, inset 3px 3px 5px #0000004d ;        
+
+    }
+
+    #mainMenu{
+        display: none;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background: #727481;
+        z-index: 99;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #mainMenu ul li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #m-device ul li:hover{
+        color: var(--brand-col);
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    #mainMenu ul li:last-child{
+        margin-right: 20px;
+    }
+
+    #menu-close{
+        text-align: center;
+        color: var(--brand-col);
+        font-size: 26px;
+        background-color: var(--font-col);
+        border-radius: 5px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3) ;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    /* hero css starts */
+
+    #hero .intro h4 {
+        margin-top: 70px;
+    }
+
+    #hero .intro h6 {
+        font-size: 14px;
+        margin-top: 30px;
+        padding-right: 70px;
+    }
+
+    #hero .person .image::before {
+        height: 170px;
+    }
+
+    #hero .person .image .text p {
+        font-size: 24px;
+    }
+
+    /* about css starts */
+
+    #about .image img{
+        display: none;
+        border-radius: 7px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3);;
+        margin-top: 77px;
+    }
+    #about .image .others-device{
+        display: block;
+        border-radius: 7px;
+        box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.3);;
+        margin-top: 30;
+    }
+
+    /* resum css starts */
+    #resum .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+
+    /* porfolio css starts */
+    
+    .m-contents {
+        margin: 135px;
+    }
+
+    .m-contents h4 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .m-contents h3 {
+        font-size: 20px;
+    }
+
+    .m-contents p {
+        font-size: 13px;
+    }
+
+    .m-contents a {
+        font-size: 12px;
+    }
+
+    .m-contents a i {
+        font-size: 12px;
+    }
+
+    .m-contents .off {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+
+    /* price css starts */
+
+    #price .accordion-body .service-item ul li {
+        padding: 0 140px;
+
+    }
+}
